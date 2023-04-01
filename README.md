@@ -42,9 +42,9 @@ Null values in columns - If any of the columns in a file have all the values as 
 
 2. Data Preprocessing
 
-a) Check for null values in the columns. If present, impute the null values using the KNN imputer.
+  a) Check for null values in the columns. If present, impute the null values using the KNN imputer.
 
-b) Check if any column has zero standard deviation, remove such columns as they don't give any information during model training.
+  b) Check if any column has zero standard deviation, remove such columns as they don't give any information during model training.
 
 3. Clustering - KMeans algorithm is used to create clusters in the preprocessed data. The optimum number of clusters is selected by plotting the elbow plot, and for the dynamic selection of the number of clusters, we are using "KneeLocator" function. The idea behind clustering is to implement different algorithms To train data in different clusters. The Kmeans model is trained over preprocessed data and the model is saved for further use in prediction.
 
@@ -78,9 +78,9 @@ In this step, we perform different sets of validation on the given set of traini
 
 2. Data Preprocessing
 
-a) Check for null values in the columns. If present, impute the null values using the KNN imputer.
+  a) Check for null values in the columns. If present, impute the null values using the KNN imputer.
 
-b) Check if any column has zero standard deviation, remove such columns as we did in training.
+  b) Check if any column has zero standard deviation, remove such columns as we did in training.
 
 3. Clustering - KMeans model created during training is loaded, and clusters for the preprocessed prediction data is predicted.
 
